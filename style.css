@@ -398,6 +398,7 @@ nav {
     border: none;
 }
 .email { background-color: #444; border: none; }
+.social-btn:not(.linkedin):not(.instagram):not(.email) { background-color: #8e44ad; border: none; }
 
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
