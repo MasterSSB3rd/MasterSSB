@@ -15,41 +15,74 @@
             <img src="logo.jpeg" alt="Logo Master SSB" class="nav-logo">
             <span>Master SSB</span>
         </div>
+        
         <ul class="nav-links">
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#programme">Programme</a></li>
-            <li><a href="#documents">Documents</a></li>
-            <li><a href="#gallery">Promotions</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about"><span class="lang-fr">À propos</span><span class="lang-en" style="display:none;">About</span></a></li>
+            <li><a href="#programme"><span class="lang-fr">Programme</span><span class="lang-en" style="display:none;">Program</span></a></li>
+            <li><a href="#documents"><span class="lang-fr">Documents</span><span class="lang-en" style="display:none;">Documents</span></a></li>
+            <li><a href="#gallery"><span class="lang-fr">Promotions</span><span class="lang-en" style="display:none;">Gallery</span></a></li>
+            <li><a href="#contact"><span class="lang-fr">Contact</span><span class="lang-en" style="display:none;">Contact</span></a></li>
         </ul>
+
+        <button onclick="toggleLanguage()" class="lang-btn">
+            <span id="lang-text">EN</span> <i class="fas fa-globe"></i>
+        </button>
     </nav>
 
     <header class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Master Sciences de la Santé et BioTechnologies</h1>
-            <h2>Parcours : Pathologies Métaboliques, Inflammatoires et Infectieuses</h2>
-            <p>Un partenariat d'excellence entre l'Université Hassan II de Casablanca et l'Université Toulouse III Paul Sabatier.</p>
+            <h1 class="lang-fr">Master Sciences de la Santé et BioTechnologies</h1>
+            <h1 class="lang-en" style="display:none;">Master of Health Sciences and BioTechnologies</h1>
+
+            <h2 class="lang-fr">Parcours : Pathologies Métaboliques, Inflammatoires et Infectieuses</h2>
+            <h2 class="lang-en" style="display:none;">Pathway: Metabolic, Inflammatory and Infectious Pathologies</h2>
+
+            <p class="lang-fr">Un partenariat d'excellence entre l'Université Hassan II de Casablanca et l'Université Toulouse III Paul Sabatier.</p>
+            <p class="lang-en" style="display:none;">An excellence partnership between Hassan II University of Casablanca and Toulouse III Paul Sabatier University.</p>
+
             <div class="cta-buttons">
-                <a href="#contact" class="btn">Contacter Nous</a>
+                <a href="#contact" class="btn">
+                    <span class="lang-fr">Contacter Nous</span>
+                    <span class="lang-en" style="display:none;">Contact Us</span>
+                </a>
             </div>
         </div>
     </header>
 
     <section id="about" class="container">
-        <h2 class="section-title">Présentation du Master</h2>
+        <h2 class="section-title">
+            <span class="lang-fr">Présentation du Master</span>
+            <span class="lang-en" style="display:none;">Master Overview</span>
+        </h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>Le Master <strong>Sciences de la Santé et BioTechnologies</strong> est une composante du cycle L.M.D. de l'Université Hassan II de Casablanca (Maroc) en partenariat avec l'Université de Toulouse III (France).</p>
-                <p><strong>Objectifs :</strong> Ce master a pour objectif général de former des jeunes diplômés capables de répondre aux besoins actuels en recherche innovante et en biotechnologies avancées.</p>
+                <p class="lang-fr">Le Master <strong>Sciences de la Santé et BioTechnologies</strong> est une composante du cycle L.M.D. de l'Université Hassan II de Casablanca (Maroc) en partenariat avec l'Université de Toulouse III (France).</p>
+                <p class="lang-en" style="display:none;">The Master <strong>Health Sciences and BioTechnologies</strong> is part of the L.M.D. cycle of Hassan II University of Casablanca (Morocco) in partnership with the University of Toulouse III (France).</p>
+                
+                <p class="lang-fr"><strong>Objectifs :</strong> Ce master a pour objectif général de former des jeunes diplômés capables de répondre aux besoins actuels en recherche innovante et en biotechnologies avancées.</p>
+                <p class="lang-en" style="display:none;"><strong>Objectives:</strong> The general objective of this master's degree is to train young graduates capable of meeting current needs in innovative research and advanced biotechnologies.</p>
+                
                 <ul class="highlights">
-                    <li><i class="fas fa-globe"></i> Enseignants du Maroc, France, Allemagne, Canada, USA.</li>
-                    <li><i class="fas fa-plane"></i> Mobilité Erasmus pour les stages de M2 à Toulouse.</li>
-                    <li><i class="fas fa-microscope"></i> Accès aux écoles doctorales et marché de l'ingénierie.</li>
+                    <li><i class="fas fa-globe"></i> 
+                        <span class="lang-fr">Enseignants du Maroc, France, Allemagne, Canada, USA.</span>
+                        <span class="lang-en" style="display:none;">Teachers from Morocco, France, Germany, Canada, USA.</span>
+                    </li>
+                    <li><i class="fas fa-plane"></i> 
+                        <span class="lang-fr">Mobilité Erasmus pour les stages de M2 à Toulouse.</span>
+                        <span class="lang-en" style="display:none;">Erasmus mobility for M2 internships in Toulouse.</span>
+                    </li>
+                    <li><i class="fas fa-microscope"></i> 
+                        <span class="lang-fr">Accès aux écoles doctorales et marché de l'ingénierie.</span>
+                        <span class="lang-en" style="display:none;">Access to doctoral schools and engineering market.</span>
+                    </li>
                 </ul>
             </div>
             <div class="about-coords">
-                <h3>Coordination</h3>
+                <h3>
+                    <span class="lang-fr">Coordination</span>
+                    <span class="lang-en" style="display:none;">Coordination</span>
+                </h3>
                 <div class="coord-card">
                     <img src="prof1.png" alt="Pr. AKARID Khadija" class="prof-img">
                     <h4>Pr. AKARID Khadija</h4>
@@ -66,44 +99,113 @@
 
     <section id="programme" class="bg-light">
         <div class="container">
-            <h2 class="section-title">Programme Pédagogique</h2>
+            <h2 class="section-title">
+                <span class="lang-fr">Programme Pédagogique</span>
+                <span class="lang-en" style="display:none;">Pedagogical Program</span>
+            </h2>
             <div class="program-grid">
                 <div class="semester-card">
-                    <h3>Semestre 1</h3>
+                    <h3>
+                        <span class="lang-fr">Semestre 1</span>
+                        <span class="lang-en" style="display:none;">Semester 1</span>
+                    </h3>
                     <ul>
-                        <li>Biologie structurale et fonctionnelle de la cellule</li>
-                        <li>Microbiologie moléculaire et structurale</li>
-                        <li>Fonctionnement du système immunitaire</li>
-                        <li>Physiologie et physiopathologies</li>
-                        <li>Méthodologies de Recherche Scientifique</li>
+                        <li>
+                            <span class="lang-fr">Biologie structurale et fonctionnelle de la cellule</span>
+                            <span class="lang-en" style="display:none;">Structural and functional cell biology</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Microbiologie moléculaire et structurale</span>
+                            <span class="lang-en" style="display:none;">Molecular and structural microbiology</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Fonctionnement du système immunitaire</span>
+                            <span class="lang-en" style="display:none;">Functioning of the immune system</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Physiologie et physiopathologies</span>
+                            <span class="lang-en" style="display:none;">Physiology and pathophysiologies</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Méthodologies de Recherche Scientifique</span>
+                            <span class="lang-en" style="display:none;">Scientific Research Methodologies</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="semester-card">
-                    <h3>Semestre 2</h3>
+                    <h3>
+                        <span class="lang-fr">Semestre 2</span>
+                        <span class="lang-en" style="display:none;">Semester 2</span>
+                    </h3>
                     <ul>
-                        <li>Pharmacothérapie et thérapies innovantes</li>
-                        <li>Bio-informatique & IA</li>
-                        <li>Génétique humaine et épigénétique</li>
-                        <li>Génomique, Transcriptomique et Protéomique</li>
-                        <li>Biosécurité et Bioéthique</li>
+                        <li>
+                            <span class="lang-fr">Pharmacothérapie et thérapies innovantes</span>
+                            <span class="lang-en" style="display:none;">Pharmacotherapy and innovative therapies</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Bio-informatique & IA</span>
+                            <span class="lang-en" style="display:none;">Bioinformatics & AI</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Génétique humaine et épigénétique</span>
+                            <span class="lang-en" style="display:none;">Human genetics and epigenetics</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Génomique, Transcriptomique et Protéomique</span>
+                            <span class="lang-en" style="display:none;">Genomics, Transcriptomics and Proteomics</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Biosécurité et Bioéthique</span>
+                            <span class="lang-en" style="display:none;">Biosafety and Bioethics</span>
+                        </li>
                     </ul>
                 </div>
                  <div class="semester-card">
-                    <h3>Semestre 3</h3>
+                    <h3>
+                        <span class="lang-fr">Semestre 3</span>
+                        <span class="lang-en" style="display:none;">Semester 3</span>
+                    </h3>
                     <ul>
-                        <li>Immunité anti-infectieuse et vaccinothérapie</li>
-                        <li>Immunogénétique et Immunopathologie</li>
-                        <li>Pathologies génétiques et inflammatoires</li>
-                        <li>Métabolisme énergétique et métabolomique</li>
-                        <li>Bases moléculaires des maladies héréditaires</li>
+                        <li>
+                            <span class="lang-fr">Immunité anti-infectieuse et vaccinothérapie</span>
+                            <span class="lang-en" style="display:none;">Anti-infectious immunity and vaccinotherapy</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Immunogénétique et Immunopathologie</span>
+                            <span class="lang-en" style="display:none;">Immunogenetics and Immunopathology</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Pathologies génétiques et inflammatoires</span>
+                            <span class="lang-en" style="display:none;">Genetic and inflammatory pathologies</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Métabolisme énergétique et métabolomique</span>
+                            <span class="lang-en" style="display:none;">Energy metabolism and metabolomics</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Bases moléculaires des maladies héréditaires</span>
+                            <span class="lang-en" style="display:none;">Molecular bases of hereditary diseases</span>
+                        </li>
                     </ul>
                 </div>
                  <div class="semester-card">
-                    <h3>Semestre 4</h3>
+                    <h3>
+                        <span class="lang-fr">Semestre 4</span>
+                        <span class="lang-en" style="display:none;">Semester 4</span>
+                    </h3>
                     <ul>
-                        <li><strong>Stage de recherche (6 mois)</strong></li>
-                        <li>Employment skills</li>
-                        <li>Mobilité internationale possible</li>
+                        <li>
+                            <span class="lang-fr"><strong>Stage de recherche (6 mois)</strong></span>
+                            <span class="lang-en" style="display:none;"><strong>Research Internship (6 months)</strong></span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Employment skills</span>
+                            <span class="lang-en" style="display:none;">Employment skills</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Mobilité internationale possible</span>
+                            <span class="lang-en" style="display:none;">International mobility possible</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -111,15 +213,26 @@
     </section>
 
     <section id="documents" class="container">
-        <h2 class="section-title">Documents des Promotions</h2>
-        <p style="text-align:center; margin-bottom: 30px;">Consultez les listes et documents relatifs aux promotions en cours directement dans votre navigateur.</p>
+        <h2 class="section-title">
+            <span class="lang-fr">Documents des Promotions</span>
+            <span class="lang-en" style="display:none;">Class Documents</span>
+        </h2>
+        <p style="text-align:center; margin-bottom: 30px;">
+            <span class="lang-fr">Consultez les listes et documents relatifs aux promotions en cours directement dans votre navigateur.</span>
+            <span class="lang-en" style="display:none;">Consult lists and documents related to current classes directly in your browser.</span>
+        </p>
         
         <div class="pdf-container">
             <div class="pdf-viewer">
                 <div class="pdf-header">
-                    <h3>2ème Promotion (2024 - 2026)</h3>
+                    <h3>
+                        <span class="lang-fr">2ème Promotion (2024 - 2026)</span>
+                        <span class="lang-en" style="display:none;">2nd Class (2024 - 2026)</span>
+                    </h3>
                     <a href="promo2.pdf" download class="download-btn">
-                        <i class="fas fa-download"></i> Télécharger
+                        <i class="fas fa-download"></i> 
+                        <span class="lang-fr">Télécharger</span>
+                        <span class="lang-en" style="display:none;">Download</span>
                     </a>
                 </div>
                 <iframe src="promo2.pdf" class="pdf-iframe" frameborder="0"></iframe>
@@ -127,9 +240,14 @@
 
             <div class="pdf-viewer">
                 <div class="pdf-header">
-                    <h3>3ème Promotion (2025 - 2027)</h3>
+                    <h3>
+                        <span class="lang-fr">3ème Promotion (2025 - 2027)</span>
+                        <span class="lang-en" style="display:none;">3rd Class (2025 - 2027)</span>
+                    </h3>
                     <a href="promo3.pdf" download class="download-btn">
-                        <i class="fas fa-download"></i> Télécharger
+                        <i class="fas fa-download"></i> 
+                        <span class="lang-fr">Télécharger</span>
+                        <span class="lang-en" style="display:none;">Download</span>
                     </a>
                 </div>
                 <iframe src="promo3.pdf" class="pdf-iframe" frameborder="0"></iframe>
@@ -139,13 +257,19 @@
 
     <section id="gallery" class="bg-light">
         <div class="container">
-            <h2 class="section-title">Nos Promotions</h2>
+            <h2 class="section-title">
+                <span class="lang-fr">Nos Promotions</span>
+                <span class="lang-en" style="display:none;">Our Classes</span>
+            </h2>
             <div class="gallery-grid" style="justify-content: center;">
                 
                 <div class="gallery-item">
                     <img src="promo2.jpg" alt="Photo 2ème Promotion" class="promo-img">
                     <div class="gallery-caption">
-                        <h4>2ème Promotion</h4>
+                        <h4>
+                            <span class="lang-fr">2ème Promotion</span>
+                            <span class="lang-en" style="display:none;">2nd Class</span>
+                        </h4>
                         <p>2024 - 2026</p>
                     </div>
                 </div>
@@ -153,7 +277,10 @@
                 <div class="gallery-item">
                     <img src="promo3.jpg" alt="Photo 3ème Promotion" class="promo-img">
                     <div class="gallery-caption">
-                        <h4>3ème Promotion</h4>
+                        <h4>
+                            <span class="lang-fr">3ème Promotion</span>
+                            <span class="lang-en" style="display:none;">3rd Class</span>
+                        </h4>
                         <p>2025 - 2027</p>
                     </div>
                 </div>
@@ -164,8 +291,14 @@
 
     <section id="contact" class="footer-section">
         <div class="container">
-            <h2 class="section-title text-white" style="border-bottom-color: white;">Restez Connectés</h2>
-            <p class="text-white">Pour plus d'informations, contactez-nous ou suivez nos réseaux.</p>
+            <h2 class="section-title text-white">
+                <span class="lang-fr">Restez Connectés</span>
+                <span class="lang-en" style="display:none;">Stay Connected</span>
+            </h2>
+            <p class="text-white">
+                <span class="lang-fr">Pour plus d'informations, contactez-nous ou suivez nos réseaux.</span>
+                <span class="lang-en" style="display:none;">For more information, contact us or follow our social networks.</span>
+            </p>
             
             <div class="social-links">
                 <a href="https://www.linkedin.com/company/master-sciences-de-la-sant%C3%A9-et-biotechnologies-fsac/" target="_blank" class="social-btn linkedin">
@@ -191,6 +324,33 @@
         </div>
     </section>
 
+    <script>
+        let currentLang = 'fr';
+
+        function toggleLanguage() {
+            // Toggle state
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            
+            // Get all elements
+            const frElements = document.querySelectorAll('.lang-fr');
+            const enElements = document.querySelectorAll('.lang-en');
+            const btnText = document.getElementById('lang-text');
+
+            if (currentLang === 'en') {
+                // Hide French
+                frElements.forEach(el => el.style.display = 'none');
+                // Show English (Remove 'display:none' to let CSS decide Block/Inline)
+                enElements.forEach(el => el.style.display = ''); 
+                btnText.textContent = 'FR'; 
+            } else {
+                // Show French
+                frElements.forEach(el => el.style.display = '');
+                // Hide English
+                enElements.forEach(el => el.style.display = 'none');
+                btnText.textContent = 'EN'; 
+            }
+        }
+    </script>
+
 </body>
 </html>
-
