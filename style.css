@@ -499,6 +499,8 @@ nav {
 .instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
 .email { background-color: #333; }
 .social-btn:last-child { background-color: #27ae60; }
+.discord { background-color: #5865F2; } /* Discord Color */
+
 
 .social-btn:hover {
     transform: translateY(-5px);
