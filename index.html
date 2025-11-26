@@ -6,13 +6,13 @@
     <title>Master of Health Sciences and BioTechnologies</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
     <nav>
         <div class="logo-container">
-            <img src="logo.jpeg" alt="Logo Master SSB" class="nav-logo">
+            <img src="logo.png" alt="Logo Master SSB" class="nav-logo">
             <span>Master SSB</span>
         </div>
         
@@ -24,9 +24,15 @@
             <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-fr" style="display:none;">Contact</span></a></li>
         </ul>
 
-        <button onclick="toggleLanguage()" class="lang-btn">
-            <span id="lang-text">FR</span> <i class="fas fa-globe"></i>
-        </button>
+        <div class="nav-buttons">
+            <button onclick="toggleTheme()" class="lang-btn" id="theme-btn">
+                <span id="theme-text">Dark</span> <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            
+            <button onclick="toggleLanguage()" class="lang-btn">
+                <span id="lang-text">FR</span> <i class="fas fa-globe"></i>
+            </button>
+        </div>
     </nav>
 
     <header class="hero">
@@ -329,33 +335,61 @@
     </section>
 
     <script>
-        // Set initial language to English
+        // --- Language Toggle Script ---
         let currentLang = 'en';
 
         function toggleLanguage() {
-            // Toggle state
             currentLang = currentLang === 'en' ? 'fr' : 'en';
             
-            // Get all elements
             const frElements = document.querySelectorAll('.lang-fr');
             const enElements = document.querySelectorAll('.lang-en');
             const btnText = document.getElementById('lang-text');
 
             if (currentLang === 'fr') {
-                // Show French
                 frElements.forEach(el => el.style.display = '');
-                // Hide English
                 enElements.forEach(el => el.style.display = 'none');
-                // Button shows option to switch back to EN
                 btnText.textContent = 'EN'; 
             } else {
-                // Show English
                 enElements.forEach(el => el.style.display = '');
-                // Hide French
                 frElements.forEach(el => el.style.display = 'none');
-                // Button shows option to switch to FR
                 btnText.textContent = 'FR'; 
             }
+        }
+
+        // --- Dark Mode Script ---
+        const themeBtn = document.getElementById('theme-btn');
+        const themeText = document.getElementById('theme-text');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            enableDarkMode();
+        }
+
+        function toggleTheme() {
+            if (body.classList.contains('dark-mode')) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        }
+
+        function enableDarkMode() {
+            body.classList.add('dark-mode');
+            themeText.textContent = 'Light';
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+            localStorage.setItem('theme', 'dark');
+        }
+
+        function disableDarkMode() {
+            body.classList.remove('dark-mode');
+            themeText.textContent = 'Dark';
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+            localStorage.setItem('theme', 'light');
         }
     </script>
 
