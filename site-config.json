@@ -1,0 +1,82 @@
+{
+    "promotions": {
+        "promo1": {
+            "number": 1,
+            "labelEn": "1st Class",
+            "labelFr": "1ère Promotion",
+            "years": "2023 - 2025",
+            "pdfEnabled": false,
+            "images": [
+                "promo-1-pic-1.jpg",
+                "promo-1-pic-2.jpg",
+                "promo-1-pic-3.jpg"
+            ]
+        },
+        "promo2": {
+            "number": 2,
+            "labelEn": "2nd Class",
+            "labelFr": "2ème Promotion",
+            "years": "2024 - 2026",
+            "pdfEnabled": false,
+            "images": [
+                "promo-2-pic-1.jpg",
+                "promo-2-pic-2.jpg",
+                "promo-2-pic-3.jpg",
+                "promo-2-pic-4.jpg"
+            ]
+        },
+        "promo3": {
+            "number": 3,
+            "labelEn": "3rd Class",
+            "labelFr": "3ème Promotion",
+            "years": "2025 - 2027",
+            "pdfEnabled": false,
+            "images": [
+                "promo-3-pic-1.jpg",
+                "promo-3-pic-2.jpg",
+                "promo-3-pic-3.jpg",
+                "promo-3-pic-4.jpg",
+                "promo-3-pic-5.jpg",
+                "promo-3-pic-6.jpg",
+                "promo-3-pic-7.jpg",
+                "promo-3-pic-8.jpg",
+                "promo-3-pic-9.jpg",
+                "promo-3-pic-10.jpg"
+            ]
+        },
+        "promo4": {
+            "number": 4,
+            "labelEn": "4th Class soon ....",
+            "labelFr": "4ème Promotion soon ....",
+            "years": "",
+            "pdfEnabled": false,
+            "images": []
+        }
+    },
+    "announcements": [
+        {
+            "image": "announcement-4.jpg",
+            "titleEn": "Register for the current lecture (prestigious lectures)",
+            "titleFr": "S'inscrire à la conférence en cours (conférences de prestige)",
+            "link": "https://masterssb3rd.github.io/register/"
+        },
+        {
+            "image": "announcement-1.jpg",
+            "titleEn": "Welcome to our community",
+            "titleFr": "Bienvenue dans notre communauté",
+            "link": "https://discord.gg/KPh8cdHZYS"
+        },
+        {
+            "image": "announcement-2.jpg",
+            "titleEn": "Join to our instagram",
+            "titleFr": "Rejoignez-nous sur Instagram",
+            "link": "https://www.instagram.com/master_ssb_fsac/"
+        },
+        {
+            "image": "announcement-3.jpg",
+            "titleEn": "Join to our Linkedin",
+            "titleFr": "Rejoignez-nous sur LinkedIn",
+            "link": "https://www.linkedin.com/company/master-sciences-de-la-sant%C3%A9-et-biotechnologies-fsac/"
+        }
+    ]
+}
