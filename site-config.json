@@ -55,6 +55,12 @@
     },
     "announcements": [
         {
+            "image": "announcement-5.jpg",
+            "titleEn": "List of candidates invited to appear, provided with their physical file for verification.",
+            "titleFr": "Liste des candidats invités à se présenter, munis de leur dossier physique pour vérification.",
+            "link": ""
+        },
+        {
             "image": "announcement-4.jpg",
             "titleEn": "Register for the current lecture (prestigious lectures)",
             "titleFr": "S'inscrire à la conférence en cours (conférences de prestige)",
