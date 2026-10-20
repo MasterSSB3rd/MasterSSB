@@ -57,12 +57,6 @@
     },
     "announcements": [
         {
-            "image": "announcement-5.jpg",
-            "titleEn": "List of candidates admitted for final registratio",
-            "titleFr": "Liste des candidats admis pour inscription définitive",
-            "link": "https://drive.google.com/file/d/17Ake-1ZVpt0WIf9FoyfkMAlAAHbeG5MO/view?usp=sharing"
-        },
-        {
             "image": "announcement-4.jpg",
             "titleEn": "Register for the current lecture (prestigious lectures)",
             "titleFr": "S'inscrire à la conférence en cours (conférences de prestige)",
