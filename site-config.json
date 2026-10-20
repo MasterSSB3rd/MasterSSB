@@ -50,7 +50,9 @@
             "labelFr": "4ème Promotion",
             "years": "2026 - 2028",
             "pdfEnabled": false,
-            "images": []
+            "images": [
+                "promo-4-pic-1.jpg"
+            ]
         }
     },
     "announcements": [
